@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+        <title>ÖRNEK WEB SİTESİ</title>
+    </head>
+    <body>
+        <h1 style="color: cornflowerblue;">WHİTE BASKI ROBOTİK İŞ BAŞVURU FORMU</h1>
+        
+        <form action="basvuruform.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Sözleşme Onay</legend>
+                <input type="checkbox" id="onay" name="onay" value="1" required>
+                <label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul 
+                ediyorum ve onaylıyorum</label> <br>
+            <input type="submit" name="btnKayıt" id="btnKayıt" value="Formu Kaydet">
+            <input type="reset" name="btntemzile" id="btntemzile" value="Formu Temizle">
+            </fieldset>
+            <fieldset>
+                <legend>Kullanıcı Bilgileri</legend>
+                <table border="1">
+                    <tr>
+                        <td>Form ID:</td>
+                        <td>
+                            <input type="text" id=gID name="gID" 
+                            value="123456789" disabled>
+                            <input type="hidden" id="gID1" name="gID1"
+                            value="123456789">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ad:</td>
+                        <td>
+                            <input type="text" id="ad" name="ad" 
+                            placeholder="Adınızı Giriniz" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soyad:</td>
+                        <td>
+                            <input type="text" id="soyad" name="soyad"
+                             placeholder="Soyadınızı Giriniz" required> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>İletişim Numarası:</td>
+                        <td>
+                            <input type="number"  id="tel" name="tel" 
+                            placeholder="(05_)___ __ __)" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>
+                            <input type="email" id="email" name="email" 
+                            placeholder="@gmail.com" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Yaş:</td>
+                        <td> 
+                            <input type="number" min="18" max="40" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fotoğraf Ekle:</td>
+                        <td>
+                            <input type="file" id="foto" name="foto" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kullanıcı Şifresi(6 haneli):</td>
+                        <td>
+                            <input type="password" id="sifre" name="sifre" maxlength="6">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Öğrenim Bilgileriniz</legend>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Öğrenim Bilgileriniz Kapsar
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>İlk İş Deneyiminiz:</td>
+                        <td><input type="date" id="tarih" name="tarih"
+                        value="2021-08-02"></td>
+                        <td>
+                        <input type="checkbox" id="yok" name="yok">
+                        <label for="yok">YOK</label></td>
+                    </tr>
+                    <tr>
+                        <td>Programlama Dilleri</td>
+                        <td>
+                            <select  size="3" multiple name="pdil" id="pdil">
+                                <option value="1">C#</option>
+                                <option value="2">C++</option>
+                                <option value="3">Html5</option>
+                                <option value="4">Java</option>
+                                <option value="5">JavaScript</option>
+                             </select>    
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Mail Listesi</legend>
+                Mail almak istiyorum 
+                <input type="radio" id="mliste" name="mliste">
+                <br>
+                Mail almak istemiyorum
+                <input type="radio" id="mailliste" name="mailliste">
+            </fieldset>
+        </form>
+    </body>
+</html>
