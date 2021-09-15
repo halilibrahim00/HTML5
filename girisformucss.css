@@ -1,0 +1,76 @@
+#giris{
+    width: 550px;
+    height: 330px;
+    margin: 0px auto 50px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#giris::before,
+#giris::after{
+    content: "";
+    position:absolute;
+    bottom: -3px;
+    left: 2px;
+    right: 2px;
+    top: 0;
+    z-index:  -1;
+    background: #fff;
+    border:1px solid #ccc;
+}
+#giris::after{
+    left: 4px;
+    right: 4px;
+    bottom: -5px;
+    z-index: -2px;
+    box-shadow: 0 8px -5px rgba(0, 0, 0, .3);
+}
+#girid h1{
+    position: relative;
+    font: italic 15px Arial;
+    color: #2493ff ;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.placholder{
+    color: #bbb;
+}
+
+#giris input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#giris input:focus{
+    outline: 0;
+    border-color: #aaa;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+}
+
+#giris button{
+    margin: 20px 0 0 0;
+    padding: 15px 18px; 
+    width: 100%;   
+    cursor: pointer;
+    border: 1px solid #2493ff;
+    color: rgb(0, 0, 0);
+    font: bold 17px arial, helvetica;
+    border-radius: 3px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3),0 1px 0 rgba(255, 255, 255, .5);
+
+}
+
+
+#giris button:hover{
+    background-color: royalblue;
+    border-color: royalblue;
+}
+#giris button:active{
+    position: relative;
+    top: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset;
+}
